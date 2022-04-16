@@ -16,7 +16,8 @@ function App() {
     }, 2000);
     return () => clearInterval(intervalID);
   }, []);
-  const percent = 100 - (distance / MAX_DISTANCE) * 100;
+  const value = Math.abs(100 - (distance / MAX_DISTANCE) * 100);
+  const percent = value > 100 ? 100 : value;
   const time = new Date().toLocaleTimeString();
   return (
     <div className='App'>
