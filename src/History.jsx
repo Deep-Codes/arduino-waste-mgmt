@@ -1,12 +1,14 @@
 import React, { useState, useRef } from 'react';
+import { nanoid } from 'nanoid';
 
 const History = ({ time, distance, percent }) => {
   const historyRef = useRef([]);
   if (distance !== null) {
-    historyRef.current.push({
+    historyRef.current.unshift({
       time,
       distance,
       percent,
+      id: nanoid(),
     });
   }
   return (
@@ -20,7 +22,7 @@ const History = ({ time, distance, percent }) => {
       </thead>
       <tbody>
         {historyRef.current.map((h, i) => (
-          <tr key={h.time}>
+          <tr key={h.id}>
             <td>{h.time}</td>
             <td>{h.percent.toFixed(2)}%</td>
             <td>{h.distance}</td>
