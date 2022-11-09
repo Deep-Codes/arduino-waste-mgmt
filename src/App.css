@@ -1,9 +1,8 @@
-
-.App{
+.App {
   background-color: var(--gray1);
   color: var(--gray12);
   width: 100%;
-  min-height: 100vh;
+  height: 100%;
   text-align: center;
   padding-top: 50px;
   display: flex;
@@ -11,24 +10,30 @@
   align-items: center;
 }
 
-h1,h2,h3,h4,h5,h6,p{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin: 0;
 }
 
-.container{
+.container {
   display: flex;
   gap: 1rem;
   margin-top: 2rem;
 }
 
-.wrapper{
+.wrapper {
   background-color: var(--gray3);
   height: 250px;
   width: 150px;
   position: relative;
 }
 
-.box{
+.box {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -37,12 +42,12 @@ h1,h2,h3,h4,h5,h6,p{
   transition: all 0.2s ease;
 }
 
-.dashboard{
+.dashboard {
   padding: 1rem;
   text-align: left;
 }
 
-.dashboard h1{
+.dashboard h1 {
   font-variant-numeric: tabular-nums;
   font-size: 4rem;
   margin: 0.5rem 0;
@@ -54,7 +59,7 @@ h1,h2,h3,h4,h5,h6,p{
 }
 
 
-.rule{
+.rule {
   display: flex;
   width: 100%;
   height: 1px;
@@ -62,7 +67,7 @@ h1,h2,h3,h4,h5,h6,p{
   background-color: var(--gray3);
 }
 
-.history{
+.history {
   margin: 1rem 0;
 }
 
@@ -118,6 +123,7 @@ table tr td {
 table td:nth-child(1) {
   border-left: 1px solid transparent;
 }
+
 tr {
   color: var(--gray11);
   background-color: var(--gray2);
